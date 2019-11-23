@@ -48,6 +48,12 @@ span:hover {
     border: 1px solid brown;
     
 }
+.timeofDay {
+    height:4rem;
+    width:10rem;
+    border:1px solid white;
+    color:linen;
+}
 .completed {
     color:red;
     text-decoration: line-through;
@@ -85,6 +91,7 @@ span:hover {
     font-size: 22px;
     height: 3.0rem;
     line-height: 3.0rem;
+    
 }
 .sched-input{
     width: 100%;
@@ -92,12 +99,26 @@ span:hover {
     margin: 0px;
 }
 
-.exact-hour{
+.exact-hour1{
+    color: lightblue;
+    background:  #2980B9;
+    font-size: 26px;
+     
+}
+.exact-hour2{
+    color: gold;
+    background:  #2980B9;
+    font-size: 26px;
+   
+}
+.exact-hour3{
     color: white;
     background:  #2980B9;
     font-size: 26px;
     
 }
+
+
 .hourly-input{
     background-color: linen;
     
