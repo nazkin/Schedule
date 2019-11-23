@@ -1,0 +1,109 @@
+body {
+    background-color: lightsteelblue;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    font-size: 22px;
+    height: 2.8rem;
+    line-height: 2.8rem;
+    background-color: linen;
+}
+li:nth-child(2n) {
+    background-color: #fdf0e3;
+}
+span {
+    margin-right: 1.5rem;
+    text-align: center;
+    opacity: 0.1;
+}
+span:hover {
+    display: inline-block;
+    border: 1px solid crimson;
+    opacity: 1.0;
+    
+    
+}
+
+#new-todo {
+    padding: 13px 13px 13px 20px;
+    font-size: 20px;
+    background-color: #f7f7f7;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+#new-todo:focus {
+    background-color: white;
+    border: 1px solid #2980B9;
+}
+#container {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #708996;
+    align-items: center;
+    border: 1px solid brown;
+    
+}
+.completed {
+    color:red;
+    text-decoration: line-through;
+}
+.todo-header {
+    background-color: #2980B9;
+    color: whitesmoke;
+    margin: 0px;
+    padding: 0.7rem 0.9rem;
+    font-weight: normal;
+}
+#main {
+    width: 100%;
+    background-color:#708996;
+}
+
+.remove-todo{
+    display: none;
+}
+#quote{
+    width: 100%;
+    border: 1px solid brown;
+    background-color: lightgrey;
+}
+#todoList{
+    
+    background-color: #f7f7f7;
+    
+    box-shadow: 0 0 3px black;
+}
+
+
+#each-hour {
+    width: 100%;
+    font-size: 22px;
+    height: 3.0rem;
+    line-height: 3.0rem;
+}
+.sched-input{
+    width: 100%;
+    height: 98%;
+    margin: 0px;
+}
+
+.exact-hour{
+    color: white;
+    background:  #2980B9;
+    font-size: 26px;
+    
+}
+.hourly-input{
+    background-color: linen;
+    
+   
+}
+.delete-input{
+    background-color: lightpink;
+    
+}

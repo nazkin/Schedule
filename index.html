@@ -1,0 +1,65 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+   <script src="https://unpkg.com/moment@2.8.1/moment.js"></script>
+    
+    <!-- Icons -->
+    <a href="https://icons8.com/icon/82777/clear-symbol"></a>
+   <link rel="stylesheet" type="text/css" href="style.css">
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <title>Daily Planner</title>
+</head>
+<body>
+    <div id = "container" class="container p-4 my-3">
+        <div id="quote" class="row mb-3">
+            <div id ="todoList" class = "col-4 p-0">
+                <h3 class = "todo-header">To-Do List
+                        <button id ="toggle-todo"type="button" class="btn btn-outline-light ml-5">T</button>
+                </h3>
+                <input id="new-todo" type="text" placeholder="Add a new to-do">
+                <ul>
+                    <li><span><img src="https://img.icons8.com/material-outlined/26/000000/clear-symbol.png"></span>
+                        Brush teeth</li>
+                    <li><span><img src="https://img.icons8.com/material-outlined/26/000000/clear-symbol.png"></span>
+                        Eat breakfast</li>
+                </ul>
+            </div>
+            <div class="col-8">
+              <h1> This is going to be the quote of the day</h1> 
+            </div>
+        </div>
+
+        <div id ="main" class = "row">
+            <div id = "schedule" class = "col-12 p-0 mb-1">
+                <div id = "each-hour" class="row p-0 m-0 ">
+                    <div class="exact-hour col-2 d-flex align-items-center justify-content-center ">
+                        7:00 AM
+                    </div>
+                    <div class="hourly-input col-9">
+                        <input class="sched-input" type="text" placeholder="Enter your new plan">
+                    </div>
+                    <div class="delete-input col-1 d-flex justify-content-center">
+                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+ 
+
+   <script src = "script.js"></script> 
+</body>
+</html> 
+
