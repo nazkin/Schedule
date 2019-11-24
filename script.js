@@ -45,7 +45,7 @@ $( document ).ready(function() {//**********************************************
 var insertSchedule = function() {
     var htmlComponent,newHtml;
     
-    htmlComponent = '<div id = "schedule" class = "col-12 p-0 my-2"><div id = "each-hour" class="row p-0 m-0 "><div class="%exact-hour% col-2 d-flex align-items-center justify-content-center ">%time%:00</div><div class="hourly-input col-9"><input id="%id%" class="sched-input" type="text" placeholder="..." value="%value%" ></div><div class="delete-input col-1 d-flex justify-content-center"><button type="button" class="btn btn-outline-danger">Delete</button> </div></div></div>';
+    htmlComponent = '<div id = "schedule" class = "col-12 p-0 my-2"><div id = "each-hour" class="row p-0 m-0 "><div class="%exact-hour% col-2 d-flex align-items-center justify-content-center ">%time%:00</div><div class="hourly-input col-9"><input id="%id%" class="sched-input" type="text" placeholder="..." value="%value%" ></div><div class="delete-input col-1 d-flex justify-content-center"><button type="button" class="btn btn-outline-danger">--Del--</button> </div></div></div>';
     for(var x = 7; x < 24; x++) {
         newHtml = htmlComponent.replace("%time%",x);
         newHtml = newHtml.replace("%id%", x-7);//since the counter starts at 7 i subtract 7 to get it down to 0 for the array reference
