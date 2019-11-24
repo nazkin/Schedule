@@ -76,15 +76,14 @@ span:hover {
 #quote{
     width: 100%;
     border: 1px solid brown;
-    background-color: lightgrey;
+    background-color: #66AACC;
 }
-#todoList{
-    
-    background-color: #f7f7f7;
-    
-    box-shadow: 0 0 3px black;
+.quote-of-day{
+    font-size: 28px;
+    font-weight:300;
+    color: lightgoldenrodyellow;
+    font-family: 'Josefin Slab', serif;
 }
-
 
 #each-hour {
     width: 100%;

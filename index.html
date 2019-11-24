@@ -12,8 +12,9 @@
     
    <script src="https://unpkg.com/moment@2.8.1/moment.js"></script>
     
-    <!-- Icons -->
+    <!-- Icons& Google Fonts -->
     <a href="https://icons8.com/icon/82777/clear-symbol"></a>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab&display=swap" rel="stylesheet">
    <link rel="stylesheet" type="text/css" href="style.css">
     <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -25,9 +26,9 @@
     <div id = "container" class="container p-4 my-3">
     
         <div id="quote" class="row mb-3 d-flex justify-content-around">
-            <h1 class = "timeofDay"></h1>
+            
             <div id ="todoList" class = "col-4 p-0">
-
+                 
                 <h3 class = "todo-header">To-Do List
                         <button id ="toggle-todo"type="button" class="btn btn-outline-light ml-5">T</button>
                 </h3>
@@ -40,12 +41,13 @@
                 </ul>
             </div>
             <div class="col-8">
-              <h1> This is going to be the quote of the day</h1> 
+                    <h1 class = "timeofDay"></h1>
+              <h1 class = 'quote-of-day'> This is going to be the quote of the day</h1> 
             </div>
         </div>
 
         <div id ="main" class = "row">
-            <div id = "schedule" class = "col-12 p-0 mb-1">
+            <!-- <div id = "schedule" class = "col-12 p-0 mb-1">
                 <div id = "each-hour" class="row p-0 m-0 ">
                     <div class="exact-hour col-2 d-flex align-items-center justify-content-center ">
                         7:00 AM
@@ -57,7 +59,7 @@
                         <button type="button" class="btn btn-outline-danger">Delete</button>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>    
     </div>
  
