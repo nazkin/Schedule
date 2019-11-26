@@ -1,4 +1,4 @@
-//c7653ece574413d1f94171d5a4d625df
+
 
 
 $( document ).ready(function() {//****************************************************************************************************************************************************************************** */
@@ -13,10 +13,18 @@ $( document ).ready(function() {//**********************************************
     }
     
     //Display the time and the hour of the day
-    var timeNow = moment().format('LT'); 
+   
+   var timeNow = moment().format('LT');
+   var hourNow = moment().hour();
+   $(".timeofDay").text(timeNow);
+
+   var clicker = function() {
+    timeNow = moment().format('LT');
+    moment().hour();
     $(".timeofDay").text(timeNow);
-    var hourNow = moment().hour();
-    console.log(hourNow);
+   }
+   setInterval(clicker,1000);
+    
     //The todo list
     $('ul').on('click','li', function() {
         $(this).toggleClass("completed");
@@ -44,13 +52,13 @@ $( document ).ready(function() {//**********************************************
 //Working with the schedule
 var insertSchedule = function() {
     var htmlComponent,newHtml;
-    
+
     htmlComponent = '<div id = "schedule" class = "col-12 p-0 my-2"><div id = "each-hour" class="row p-0 m-0 "><div class="%exact-hour% col-2 d-flex align-items-center justify-content-center ">%time%:00</div><div class="hourly-input col-9"><input id="%id%" class="sched-input" type="text" placeholder="..." value="%value%" ></div><div class="delete-input col-1 d-flex justify-content-center"><button type="button" class="btn btn-outline-danger">--Del--</button> </div></div></div>';
     for(var x = 7; x < 24; x++) {
         newHtml = htmlComponent.replace("%time%",x);
         newHtml = newHtml.replace("%id%", x-7);//since the counter starts at 7 i subtract 7 to get it down to 0 for the array reference
         
-        if(schedArr[x-7]!== null && schedArr[x-7]!== undefined){
+        if(schedArr[x-7]!== null && schedArr[x-7]!== undefined && schedArr[x-7]!== ""){
             newHtml = newHtml.replace("%value%",schedArr[x-7]);//since the counter starts at 7 i subtract 7 to get it down to 0 for the array reference
         }else {
             newHtml = newHtml.replace("%value%","");
@@ -80,8 +88,7 @@ insertSchedule();
           schedArr = JSON.parse(localStorage.getItem("schedule"));
 
           event.target.blur();
-        }
-       
+        }   
     
     });
 //Add an event listener for the delete event
@@ -102,7 +109,7 @@ $('#main').on('click', function(event){
 
 });
 
-var queryURL="http://quotes.stormconsultancy.co.uk/random.json"
+var queryURL="http://quotes.stormconsultancy.co.uk/random.json";
 $.ajax({
     url: queryURL,
     method: "GET"
